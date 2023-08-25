@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Features from "./components/Features";
-import Sobre from "./components/Sobre";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 
@@ -20,8 +20,8 @@ export default function Home() {
 
       <main>
         <Hero />
-        <Sobre />
-        <Testimonials /> 
+        <About />
+        <Testimonials />
         <Features />
         <Footer />
       </main>
