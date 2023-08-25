@@ -24,7 +24,7 @@ export default function Hero() {
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
+            <polygon points="60,0 100,0 50,100 50,0" />
           </svg>
 
           <Popover>
