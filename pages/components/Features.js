@@ -1,76 +1,523 @@
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-} from "@heroicons/react/outline";
-
-const features = [
-  {
-    name: "14-day free trial",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: GlobeAltIcon,
-  },
-  {
-    name: "Premium setup support",
-    description:
-      "Customers can experience all the benefits free of charge by selecting the 14-day trial. Cancel anytime!",
-    icon: ScaleIcon,
-  },
-  {
-    name: "Over 30+ reports",
-    description:
-      "Real-time adherence reports are available on the multiple factors of products, stocks and related sectors.",
-    icon: LightningBoltIcon,
-  },
-  {
-    name: "Accounting module",
-    description:
-      "brief summary of accounting operations, receivables, cash flows etc based onn the inventory system.",
-    icon: AnnotationIcon,
-  },
-];
 
 export default function Features() {
   return (
-    <div className="mb-12 py-12 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center py-10">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-            Invenerry
-          </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            A better way to manage inventory
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            With inVenerry, you get simple yet powerful software for maintaining
-            product relationss with manufacturers, B2B wholesalers, online
-            sellers and retailers. Its robust reporting capabilities and
-            analytics make it the best choice for inventory management.
+    <section className="flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+      <div className="px-4 py-20 mx-auto max-w-7xl">
+        <div className="max-w-xl mx-auto">
+          <h1 className="mb-4 text-3xl font-bold text-center dark:text-white">
+            Customer Reviews </h1>
+          <p className="mb-16 text-base text-center text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque? Pariatur
+            numquam, odio quod nobis ipsum ex cupiditate?
           </p>
         </div>
-
-        <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative">
-                <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
-                    {feature.name}
-                  </p>
-                </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">
-                  {feature.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/rF6G0Dh9/pexels-emmy-e-2381069.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                Sikha Singh </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">15 min ago</p>
+            </div>
+          </div>
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                Sikha Singh </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">50 min ago</p>
+            </div>
+          </div>
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                James Hawkin </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">5min ago</p>
+            </div>
+          </div>
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/JzmrHQmk/pexels-pixabay-220453.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                Harish K.C </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">20 min ago</p>
+            </div>
+          </div>
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/4NMZPYdh/pexels-dinielle-de-veyra-4195342.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                Smith Thapa </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">10 min ago</p>
+            </div>
+          </div>
+          <div
+            className="w-full p-4 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg">
+            <div className="inline-block mb-4 rounded-full">
+              {/* <img class="object-cover w-20 h-20 mr-4 rounded-full shadow"
+                src="https://i.postimg.cc/RhQYkKYk/pexels-italo-melo-2379005.jpg" alt="avatar"> */}
+            </div>
+            <ul className="flex items-center justify-center mb-4">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    className="w-4 mr-1 text-blue-400 dark:text-blue-400 bi bi-star-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p className="mb-4 text-base text-gray-500 dark:text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
+              iure minus sed fugit obcaecati minima quam reiciendis dicta!
+            </p>
+            <div className="inline-block ">
+              <h2 className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
+                Raj Tuladhar </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400">6 hour ago</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
