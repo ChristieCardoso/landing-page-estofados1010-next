@@ -1,5 +1,5 @@
 
-export default function Features() {
+export default function Reviews() {
   return (
     <section className="flex items-center justify-center bg-gray-100 dark:bg-gray-800">
       <div className="px-4 py-20 mx-auto max-w-7xl">

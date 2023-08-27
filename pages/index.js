@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "./components/Hero";
-import Testimonials from "./components/Testimonials";
-import Features from "./components/Features";
+import Services from "./components/Services";
+import Reviews from "./components/Reviews";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
@@ -21,8 +21,8 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Testimonials />
-        <Features />
+        <Services />
+        <Reviews />
         <Footer />
       </main>
     </div>
