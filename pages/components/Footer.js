@@ -1,17 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-
+import Image from 'next/image';
+import Logo from '../../public/logo.png'
 export default function Footer() {
   return (
-    <section className="flex flex-col h-screen lg:justify-end font-poppins ">
-      <div className="w-full bg-blue-900 pt-11 dark:bg-gray-900 ">
-        <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-0">
+    <section className="flex flex-col lg:justify-between font-poppins ">
+      <div className="w-full bg-blue-900 pt-5 dark:bg-gray-900 ">
+        <div className="flex-1 px-4 py-4 lg:py-0">
           <div className="flex flex-wrap py-10 -mx-3">
-            <div className="w-full px-4 mb-11 md:w-1/2 lg:w-4/12 lg:mb-0">
-              <a href="#" className="inline-block mb-4 text-xl font-bold text-gray-200 dark:text-gray-400">About
-                Company</a>
-              <p className="text-base font-normal leading-6 text-gray-300 lg:w-64 dark:text-gray-400">
-                Lorem ipsum dor amet Lorem ipsum dor amet Lorem ipsum dor amet Lorem ipsum dor amet</p>
-              <div className="flex justify-start mt-4 ">
+            <div className="px-3 flex-col">
+              <Image
+                width={200}
+                height={200}
+                src={Logo}
+                alt="Logo Estofados 10/10"
+              />
+              <div className="flex  justify-center items-center">
                 <a className="inline-block mr-5 text-gray-800 hover:text-blue-700 dark:text-gray-400 dark:hover:text-blue-400"
                   href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
@@ -35,7 +38,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/4 lg:w-2/12 mb-11 lg:mb-0">
-              <h2 className="mb-4 text-xl font-bold text-gray-200 dark:text-gray-400">Services </h2>
+              <h2 className="mb-4 text-xl font-bold text-gray-200 dark:text-gray-400">Navegue </h2>
               <ul>
                 <li className="flex items-center mb-4 ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 text-white dark:text-gray-400 bi bi-chevron-right" viewBox="0 0 16 16">
@@ -47,14 +50,13 @@ export default function Footer() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 text-white dark:text-gray-400 bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
                   </svg>
-                  <a href="#" className="inline-block text-base font-normal text-gray-300 dark:text-gray-400">About
-                    Us</a>
+                  <a href="#" className="inline-block text-base font-normal text-gray-300 dark:text-gray-400">Serviços</a>
                 </li>
                 <li className="flex items-center mb-4 ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 text-white dark:text-gray-400 bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
                   </svg>
-                  <a href="#" className="inline-block text-base font-normal text-gray-300 dark:text-gray-400">Services</a>
+                  <a href="#" className="inline-block text-base font-normal text-gray-300 dark:text-gray-400">Avaliações</a>
                 </li>
               </ul>
             </div>
@@ -83,9 +85,18 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="py-5 text-center text-gray-200 bg-blue-800 dark:bg-gray-800 dark:text-gray-400">
-          <span>© Copyright 2022 . All Rights Reserved</span>
+        <div className=" py-2 text-center text-gray-200 dark:bg-gray-800">
+          <span>© 2023 Estofados 10/10 | Todos os direitos reservados.</span>
+          <p className='flex justify-center gap-2 items-center'>Dev by{" "}<a
+            href="https://github.com/ChristieCardoso"
+            rel="noreferrer"
+            target="_blank" className='text-blue-400'
+          >Christie</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16" >
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg></p>
         </div>
+
       </div></section>
   );
 }
