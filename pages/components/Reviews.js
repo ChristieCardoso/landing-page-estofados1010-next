@@ -6,7 +6,7 @@ export default function Reviews() {
     <section className="flex items-center justify-center bg-gray-100">
       <div className="px-5 py-20 mx-auto max-w-7xl">
         <div className="px-4 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+          <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl">
             Avaliações
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">

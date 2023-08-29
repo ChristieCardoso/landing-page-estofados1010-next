@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Logo  from '../../public/logo.png'
+import Logo from '../../public/logo.png'
 const navigation = [
   { name: "Sobre", href: "#" },
   { name: "Serviços", href: "#" },
@@ -45,7 +45,7 @@ export default function Hero() {
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -57,7 +57,7 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="font-medium text-gray-500 hover:text-gray-900"
+                      className="font-medium text-gray-900"
                     >
                       {item.name}
                     </a>
@@ -82,9 +82,9 @@ export default function Hero() {
               >
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
-                    <div>                     
+                    <div>
                       <Image
-                      className="h-8 w-auto"
+                        className="h-8 w-auto"
                         width={200}
                         height={200}
                         src={Logo}
@@ -92,7 +92,7 @@ export default function Hero() {
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -103,7 +103,7 @@ export default function Hero() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
                       </a>
@@ -120,18 +120,18 @@ export default function Hero() {
                 <span className="block xl:inline">
                   Estofados impecáveis, conforto elevado: sua escolha em{" "}
                 </span>{" "}
-                <span className="block text-indigo-600 xl:inline">
+                <span className="block text-blue-400 xl:inline">
                   Limpeza
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Na Estofados 10/10, oferecemos serviços de limpeza e higienização que vão além das expectativas. Solicite um orçamento agora e descubra como podemos elevar o conforto dos seus espaços.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-800 md:py-4 md:text-lg md:px-10"
                   >
                     Fazer um Orçamento
                   </a>
