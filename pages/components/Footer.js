@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Logo from '../../public/logo.png'
 export default function Footer() {
   return (
-    <section className="flex flex-col lg:justify-between">
+    <section id='footer' className="flex flex-col lg:justify-between">
       <div className="w-full bg-gray-200 pt-5">
         <div className="flex-1 px-4 py-4 lg:py-0">
           <div className="flex justify-evenly items-center flex-wrap py-10 -mx-3">
@@ -50,13 +50,19 @@ export default function Footer() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
                   </svg>
-                  <a href="#" className="inline-block text-base font-normal ">Serviços</a>
+                  <a href="#about" className="inline-block text-base font-normal">Sobre</a>
                 </li>
                 <li className="flex items-center mb-4 ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
                   </svg>
-                  <a href="#" className="inline-block text-base font-normal">Avaliações</a>
+                  <a href="#services" className="inline-block text-base font-normal ">Serviços</a>
+                </li>
+                <li className="flex items-center mb-4 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-3 h-3 mr-1 bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                  </svg>
+                  <a href="#reviews" className="inline-block text-base font-normal">Avaliações</a>
                 </li>
               </ul>
             </div>

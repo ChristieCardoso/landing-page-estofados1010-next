@@ -4,7 +4,7 @@ import img from '../../public/assets/abount.jpg';
 
 export default function AboutUs() {
   return (
-    <section className="relative isolate overflow-hidden py-24 sm:py-32">
+    <section id="about" className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div className="px-4 mb-10 md:text-center md:mb-20">
           <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">

@@ -5,11 +5,12 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from '../../public/logo.png'
+
 const navigation = [
-  { name: "Sobre", href: "#" },
-  { name: "Serviços", href: "#" },
-  { name: "Avaliações", href: "#" },
-  { name: "Contato", href: "#" },
+  { name: "Sobre", href: "#about" },
+  { name: "Serviços", href: "#services" },
+  { name: "Avaliações", href: "#reviews" },
+  { name: "Contato", href: "#footer" },
 ];
 
 export default function Hero() {
@@ -52,11 +53,13 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8 ">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
+                      spy={true}
+                      smooth={true}
                       className="font-medium text-gray-900"
                     >
                       {item.name}

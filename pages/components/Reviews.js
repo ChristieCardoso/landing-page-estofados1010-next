@@ -3,7 +3,7 @@ import automotiva from '../../public/assets/services/service4.png'
 
 export default function Reviews() {
   return (
-    <section className="flex items-center justify-center bg-gray-100">
+    <section id="reviews" className="flex items-center justify-center bg-gray-100">
       <div className="px-5 py-20 mx-auto max-w-7xl">
         <div className="px-4 mb-10 md:text-center md:mb-20">
           <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl">

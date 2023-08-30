@@ -7,7 +7,7 @@ import automotiva from '../../public/assets/services/service4.png'
 /* eslint-disable @next/next/no-img-element */
 export default function Services() {
   return (
-    <section className="flex items-center bg-white">
+    <section id="services" className="flex items-center bg-white">
       <div className="p-2 mx-auto max-w-6xl">
         <div className="px-4 mb-10 md:text-center md:mb-20">
           <h2 className="pb-2 text-2xl font-bold md:text-4xl text-gray-600">
