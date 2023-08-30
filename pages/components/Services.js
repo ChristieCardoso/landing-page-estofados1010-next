@@ -10,7 +10,7 @@ export default function Services() {
     <section className="flex items-center bg-white">
       <div className="p-2 mx-auto max-w-6xl">
         <div className="px-4 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+          <h2 className="pb-2 text-2xl font-bold md:text-4xl text-gray-600">
             Serviços
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
@@ -22,9 +22,9 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 lg:gap-8 sm:gap-4 sm:grid-cols-2 lg:grid-cols-2">
-          <div className="flex flex-wrap mb-0 overflow-hidden bg-white rounded shadow dark:bg-gray-700">
-            <div className="relative w-full overflow-hidden lg:w-2/5 h-72">
+        <div className="grid gap-5 lg:gap-8 lg:grid-cols-2">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+            <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 style={{
                   width: '100%',
@@ -36,17 +36,15 @@ export default function Services() {
               />
             </div>
             <div className="items-center self-center flex-1 p-6">
-              <h2 className="mb-1 text-3xl font-semibold text-gray-800 dark:text-gray-300">Limpeza de Estofados</h2>
-              <p className="mb-4 text-sm leading-7 text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
+              <h2 className="mb-3 text-3xl font-bold text-gray-300 tracking-tighter">Limpeza de Estofados</h2>
+              <p className="mb-4 text-sm leading-7 text-gray-100">
+                Preservar a higiene dos estofados, garantindo a ausência de poeira, bactérias, fungos e outras impurezas, pode proporcionar uma série de vantagens para você, sua saúde e seu conforto.
               </p>
 
             </div>
           </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden bg-white rounded shadow dark:bg-gray-700">
-            <div className="relative w-full overflow-hidden lg:w-2/5 h-72">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+            <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 width={500}
                 height={660}
@@ -55,38 +53,16 @@ export default function Services() {
               />
             </div>
             <div className="items-center self-center flex-1 p-6">
-              <h2 className="mb-1 text-3xl font-semibold text-gray-800 dark:text-gray-300">Impermeabilização</h2>
+              <h2 className="mb-3 text-3xl font-bold text-gray-300">Impermeabilização</h2>
 
-              <p className="mb-4 text-sm leading-7 text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
+              <p className="mb-4 text-sm leading-7 text-gray-100">
+                Garantir a durabilidade e o aspecto impecável de móveis estofados é um objetivo compartilhado por muitos. É aqui que a impermeabilização se destaca como um procedimento essencial.
               </p>
 
             </div>
           </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden bg-white rounded shadow dark:bg-gray-700">
-            <div className="relative w-full overflow-hidden lg:w-2/5 h-72">
-              <Image
-                width={500}
-                height={660}
-                src={tapetes}
-                alt="Logo Estofados 10/10"
-              />
-            </div>
-            <div className="items-center self-center flex-1 p-6">
-              <h2 className="mb-1 text-3xl font-semibold text-gray-800 dark:text-gray-300">Limpeza Automotiva</h2>
-
-              <p className="mb-4 text-sm leading-7 text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-
-            </div>
-          </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden bg-white rounded shadow dark:bg-gray-700">
-            <div className="relative w-full overflow-hidden lg:w-2/5 h-72">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+            <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 width={500}
                 height={660}
@@ -95,11 +71,27 @@ export default function Services() {
               />
             </div>
             <div className="items-center self-center flex-1 p-6">
-              <h2 className="mb-1 text-3xl font-semibold text-gray-800 dark:text-gray-300">Carpetes & Tapetes</h2>
-              <p className="mb-4 text-sm leading-7 text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
+              <h2 className="mb-3 text-3xl font-bold text-gray-300 tracking-tighter">Limpeza Automotiva</h2>
+
+              <p className="mb-4 text-sm leading-7 text-gray-100">
+                A manutenção automotiva desempenha um papel vital na preservação da estética e higiene do seu veículo. Seja particular ou corporativo, a equipe da Estofados 10/10 oferece a solução ideal para essa necessidade.
+              </p>
+
+            </div>
+          </div>
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+            <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
+              <Image
+                width={500}
+                height={660}
+                src={tapetes}
+                alt="Logo Estofados 10/10"
+              />
+            </div>
+            <div className="items-center self-center flex-1 p-6">
+              <h2 className="mb-3 text-3xl font-bold text-gray-300">Carpetes & Tapetes</h2>
+              <p className="mb-4 text-sm leading-7 text-gray-100">
+                Visto que tapetes são elementos decorativos amplamente empregados em residências, apartamentos e estabelecimentos comerciais, é essencial assegurar sua limpeza regular e a eliminação de agentes desencadeadores de alergias, como os ácaros, por exemplo.
               </p>
             </div>
           </div>
