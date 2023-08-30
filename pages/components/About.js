@@ -6,8 +6,8 @@ export default function AboutUs() {
   return (
     <section id="about" className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-        <div className="px-4 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+        <div className="px-32 mb-10 md:text-center md:mb-20">
+          <h2 className="pb-2 px-8 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
             Sobre
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">

@@ -9,8 +9,8 @@ export default function Services() {
   return (
     <section id="services" className="flex items-center bg-white">
       <div className="p-2 mx-auto max-w-6xl">
-        <div className="px-4 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 text-2xl font-bold md:text-4xl text-gray-600">
+        <div className="px-24 mb-10 md:text-center md:mb-20">
+          <h2 className="pb-2 px-6 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
             Serviços
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
