@@ -6,6 +6,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from '../../public/logo.png'
 
+
 const navigation = [
   { name: "Sobre", href: "#about" },
   { name: "Serviços", href: "#services" },
@@ -46,7 +47,7 @@ export default function Hero() {
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400">
                         <span className="sr-only">Open main menu</span>
                         <MenuIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -58,11 +59,10 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      spy={true}
-                      smooth={true}
-                      className="font-medium text-gray-900"
+                      className="font-medium text-gray-900 relative inline-block group"
                     >
                       {item.name}
+                      <div className="h-0.5 w-0 bg-blue-400 absolute bottom-0 left-0 transition-all duration-300 group-hover:w-full"></div>
                     </a>
                   ))}
 
@@ -95,7 +95,7 @@ export default function Hero() {
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-400">
                         <span className="sr-only">Close main menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -106,9 +106,10 @@ export default function Hero() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 font-medium text-gray-900 relative group "
                       >
                         {item.name}
+                        <div className="h-1 w-0 bg-blue-400 transition-all duration-300 group-hover:w-20"></div>
                       </a>
                     ))}
                   </div>
