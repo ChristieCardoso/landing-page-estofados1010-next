@@ -4,7 +4,7 @@
 
 html,
 body {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -18,12 +18,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.carousel-arrow-button {
-  @apply rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white;
-}
-
-.my-carousel .carousel-arrow-button { @apply
-mb-2 flex justify-start items-start mt-3
 }
