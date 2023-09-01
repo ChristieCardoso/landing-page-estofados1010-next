@@ -1,26 +1,45 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 export default function Reviews() {
+
   return (
     <section id="reviews" className="flex items-center justify-center bg-white">
-      <div className="px-6 py-20 max-w-2xl">
-        <div className="px-64 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 px-30 text-2xl font-bold flex justify-center text-gray-900 md:text-4xl dark:text-gray-600">
-            Avaliações
-          </h2>
-          <div className="flex w-30 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
-            <div className="flex-1 h-2 bg-blue-200"></div>
-            <div className="flex-1 h-2 bg-blue-400"></div>
-            <div className="flex-1 h-2 bg-blue-300"></div>
-          </div>
-        </div>
+      <div className="px-6 py-20 w-3/4">
+        <h2 className="pb-2 px-30 text-2xl font-bold flex justify-center text-gray-600">
+          Avaliações
+        </h2>
+        <Carousel
 
-        <Carousel 
           showStatus={false}
           showThumbs={false}
           autoPlay={false}
           infiniteLoop={true}
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            hasPrev && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="arrow-button prev-arrow"
+              >
+                <BsChevronLeft size={24} />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className="arrow-button next-arrow"
+              >
+                <BsChevronRight size={24} />
+              </button>
+            )
+          }
         >
           <div className="w-full p-4 text-center transition-all bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-blue-500 to-90% rounded-lg">
             <div className="inline-block mb-4 rounded-full">
@@ -28,21 +47,21 @@ export default function Reviews() {
             </div>
             <ul className="flex items-center justify-center mb-4">
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -50,7 +69,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -58,7 +77,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -77,21 +96,21 @@ export default function Reviews() {
             </div>
             <ul className="flex items-center justify-center mb-4">
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -99,7 +118,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -107,7 +126,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -126,21 +145,21 @@ export default function Reviews() {
             </div>
             <ul className="flex items-center justify-center mb-4">
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -148,7 +167,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -156,7 +175,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -175,21 +194,21 @@ export default function Reviews() {
             </div>
             <ul className="flex items-center justify-center mb-4">
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
+                <a > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                   </path>
                 </svg>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -197,7 +216,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>
@@ -205,7 +224,7 @@ export default function Reviews() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 mr-1 text-yellow-300 bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                     </path>

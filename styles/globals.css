@@ -19,3 +19,18 @@ a {
 * {
   box-sizing: border-box;
 }
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
