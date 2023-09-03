@@ -19,6 +19,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Estilize o carrossel */
+.carousel {
+  position: relative;
+}
+
+/* Estilize as setas */
 .arrow-button {
   background-color: transparent;
   border: none;
@@ -26,11 +33,27 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 2px;
+  margin: auto;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* Certifique-se de que as setas estejam acima dos slides */
 }
 
-.arrow-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.prev-arrow {
+  left: 1px; /* Ajuste a posição esquerda */
 }
+
+.next-arrow {
+  right: 1px; /* Ajuste a posição direita */
+}
+
+/* Estilize o efeito de hover */
+.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+

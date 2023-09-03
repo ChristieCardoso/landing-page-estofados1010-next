@@ -9,8 +9,8 @@ export default function Services() {
   return (
     <section id="services" className="flex items-center bg-white">
       <div className="p-2 mx-auto max-w-6xl">
-        <div className="px-24 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 px-6 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+        <div div className="px-28 mb-10 md:text-center">
+          <h2 className="pb-2 px-4 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
             Serviços
           </h2>
           <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
@@ -22,8 +22,8 @@ export default function Services() {
             </div>
           </div>
         </div>
-        <div className="grid gap-5 lg:gap-8 lg:grid-cols-2">
-          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+        <div className="grid lg:gap-8 lg:grid-cols-2">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center shadow bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-blue-500 to-90% rounded-lg">
             <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 style={{
@@ -43,7 +43,7 @@ export default function Services() {
 
             </div>
           </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center shadow bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-blue-500 to-90% rounded-lg">
             <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 width={500}
@@ -61,7 +61,7 @@ export default function Services() {
 
             </div>
           </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center shadow bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-blue-500 to-90% rounded-lg">
             <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 width={500}
@@ -79,7 +79,7 @@ export default function Services() {
 
             </div>
           </div>
-          <div className="flex flex-wrap mb-0 overflow-hidden justify-center rounded shadow bg-blue-700">
+          <div className="flex flex-wrap mb-0 overflow-hidden justify-center shadow bg-gradient-to-r from-blue-500 from-10% via-sky-500 via-30% to-blue-500 to-90% rounded-lg">
             <div className="relative w-full overflow-hidden lg:w-2/5 h-72 max-w-xs transition duration-300 hover:scale-110">
               <Image
                 width={500}
@@ -97,6 +97,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
