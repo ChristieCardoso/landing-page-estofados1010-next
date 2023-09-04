@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
@@ -9,17 +8,14 @@ export default function Reviews() {
   return (
     <section id="reviews" className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-        <div className="px-32 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 px-1 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+        <div className="flex flex-col items-center justify-center mb-10 md:text-center md:mb-20">
+          <h2 className="text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600 mb-2">
             Avaliações
           </h2>
-          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
-            <div className="flex-1 h-2 bg-blue-200">
-            </div>
-            <div className="flex-1 h-2 bg-blue-400">
-            </div>
-            <div className="flex-1 h-2 bg-blue-300">
-            </div>
+          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded ">
+            <div className="flex-1 h-2 bg-blue-200"></div>
+            <div className="flex-1 h-2 bg-blue-400"></div>
+            <div className="flex-1 h-2 bg-blue-300"></div>
           </div>
         </div>
         <Carousel

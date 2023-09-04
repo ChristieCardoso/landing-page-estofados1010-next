@@ -3,17 +3,14 @@ export default function Services() {
   return (
     <section id="services" className="relative" >
       <div className="flex-1 max-w-6xl mx-auto">
-        <div div className="px-32 mb-10 md:text-center">
-          <h2 className="pb-2 px-4 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+        <div className="flex flex-col items-center justify-center mb-10 md:text-center md:mb-20">
+          <h2 className="text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600 mb-2">
             Serviços
           </h2>
-          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
-            <div className="flex-1 h-2 bg-blue-200">
-            </div>
-            <div className="flex-1 h-2 bg-blue-400">
-            </div>
-            <div className="flex-1 h-2 bg-blue-300">
-            </div>
+          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded ">
+            <div className="flex-1 h-2 bg-blue-200"></div>
+            <div className="flex-1 h-2 bg-blue-400"></div>
+            <div className="flex-1 h-2 bg-blue-300"></div>
           </div>
         </div>
         <div className="grid lg:grid-cols-4 text-center">

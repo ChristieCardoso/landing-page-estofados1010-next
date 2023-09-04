@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Fragment } from "react";
@@ -126,7 +125,7 @@ export default function Hero() {
                   <span className="text-blue-400">Limpeza</span>
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-lg text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Na Estofados 10/10, oferecemos serviços de limpeza e higienização que vão além das expectativas. Solicite um orçamento agora e descubra como podemos elevar o conforto dos seus espaços.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -16,16 +20,10 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Estilize o carrossel */
 .carousel {
   position: relative;
 }
 
-/* Estilize as setas */
 .arrow-button {
   background-color: transparent;
   border: none;
@@ -40,20 +38,17 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2; /* Certifique-se de que as setas estejam acima dos slides */
+  z-index: 2;
 }
 
 .prev-arrow {
-  left: 1px; /* Ajuste a posição esquerda */
+  left: 1px;
 }
 
 .next-arrow {
-  right: 1px; /* Ajuste a posição direita */
+  right: 1px;
 }
 
-/* Estilize o efeito de hover */
 .arrow-button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-

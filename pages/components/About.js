@@ -1,22 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
-import img from '../../public/assets/abount.jpg';
 
 export default function AboutUs() {
   return (
-    <section id="about" className="relative isolate overflow-hidden py-24 sm:py-32">
+    <section id="about" className="relative isolate overflow-hidden py-20 sm:py-32">
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
-        <div className="px-32 mb-10 md:text-center md:mb-20">
-          <h2 className="pb-2 px-8 text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600">
+        <div className="flex flex-col items-center justify-center mb-10 md:text-center md:mb-20">
+          <h2 className="text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-600 mb-2">
             Sobre
           </h2>
-          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
-            <div className="flex-1 h-2 bg-blue-200">
-            </div>
-            <div className="flex-1 h-2 bg-blue-400">
-            </div>
-            <div className="flex-1 h-2 bg-blue-300">
-            </div>
+          <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded">
+            <div className="flex-1 h-2 bg-blue-200"></div>
+            <div className="flex-1 h-2 bg-blue-400"></div>
+            <div className="flex-1 h-2 bg-blue-300"></div>
           </div>
         </div>
         <div className="flex flex-wrap items-center">
@@ -39,13 +35,11 @@ export default function AboutUs() {
               </li>
             </ul>
           </div>
-          <div className="relative w-full px-4 mb-10 md:w-1/2 lg:mb-0">
-            <Image
-              width={700}
-              height={500}
-              src={img}
-              alt="Logo Estofados 10/10"
-            />
+          <div className="relative w-full px-4 mb-10 md:w-1/2 m-auto ">
+            <img
+              className="h-5/6"
+              src="https://img.freepik.com/fotos-gratis/familia-em-casa_23-2148166828.jpg?w=900&t=st=1693790792~exp=1693791392~hmac=3f7ee98f9d455bc031cf1285878fd1132d1b77769b1eab5dc70db0dbb6046d56"
+              alt="Imagem de uma mulher jogando video-game no sofa, com um homem atras do sofa" />
           </div>
         </div>
       </div>
