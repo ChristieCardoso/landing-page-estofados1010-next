@@ -51,7 +51,7 @@ export default function Reviews() {
         >
           <div className="p-6">
             <div className="inline-block mb-5" >
-              <img alt="Man" src="https://img.freepik.com/fotos-gratis/mulher-sorridente-alegre-tirando-uma-selfie-videochat_176420-18283.jpg?w=900&t=st=1693696209~exp=1693696809~hmac=87b42b3dbd7c460688ecaa884394c8be07059a376a5693627419eec85a7bb18b" className="h-12 w-10 rounded-full" />
+              <img alt="Man" src="https://img.freepik.com/fotos-gratis/mulher-sorridente-alegre-tirando-uma-selfie-videochat_176420-18283.jpg?w=900&t=st=1693696209~exp=1693696809~hmac=87b42b3dbd7c460688ecaa884394c8be07059a376a5693627419eec85a7bb18b" className="h-12 w-10 rounded-full shadow-lg dark:shadow-black/30" />
             </div>
             <ul className="flex items-center justify-center mb-7">
               <li>
@@ -100,7 +100,7 @@ export default function Reviews() {
           </div>
           <div className="p-6">
             <div className="inline-block mb-5" >
-              <img alt="Man" src="https://img.freepik.com/fotos-gratis/retrato-de-homem-jovem-hippie-barbudo-olhando-para-a-camera-e-tomando-uma-selfie-contra-amarelo_58466-11455.jpg?w=900&t=st=1693696375~exp=1693696975~hmac=eab732287c514a73674e4325693a7f41c2356cac1e73418053ef5e6cbf3925c1" className="h-12 w-10 rounded-full" />
+              <img alt="Man" src="https://img.freepik.com/fotos-gratis/retrato-de-homem-jovem-hippie-barbudo-olhando-para-a-camera-e-tomando-uma-selfie-contra-amarelo_58466-11455.jpg?w=900&t=st=1693696375~exp=1693696975~hmac=eab732287c514a73674e4325693a7f41c2356cac1e73418053ef5e6cbf3925c1" className="h-12 w-10 rounded-full shadow-lg dark:shadow-black/30" />
             </div>
             <ul className="flex items-center justify-center mb-7">
               <li>
@@ -149,7 +149,7 @@ export default function Reviews() {
           </div>
           <div className="p-6">
             <div className="inline-block mb-5" >
-              <img alt="Man" src="https://img.freepik.com/fotos-gratis/feliz-bonito-mulher-jovem-posar-camera-em-parque-cidade_1262-19158.jpg?w=900&t=st=1693701323~exp=1693701923~hmac=0f39bbc25b71b129b95c1c7534d5849358598db0e9c320def443b5b0518bfb20" className="h-12 w-10 rounded-full" />
+              <img alt="Man" src="https://img.freepik.com/fotos-gratis/feliz-bonito-mulher-jovem-posar-camera-em-parque-cidade_1262-19158.jpg?w=900&t=st=1693701323~exp=1693701923~hmac=0f39bbc25b71b129b95c1c7534d5849358598db0e9c320def443b5b0518bfb20" className="h-12 w-10 rounded-full shadow-lg dark:shadow-black/30" />
             </div>
             <ul className="flex items-center justify-center mb-7">
               <li>
@@ -198,7 +198,7 @@ export default function Reviews() {
           </div>
           <div className="p-6">
             <div className="inline-block mb-5" >
-              <img alt="Man" src="https://img.freepik.com/fotos-gratis/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.jpg?w=900&t=st=1693701397~exp=1693701997~hmac=74360fb647906334db982b8cd3448b6aa8c5dd4e35a0445c8ab7116a52c38ad6" className="h-12 w-10 rounded-full" />
+              <img alt="Man" src="https://img.freepik.com/fotos-gratis/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.jpg?w=900&t=st=1693701397~exp=1693701997~hmac=74360fb647906334db982b8cd3448b6aa8c5dd4e35a0445c8ab7116a52c38ad6" className="h-12 w-10 rounded-full shadow-lg dark:shadow-black/30" />
             </div>
             <ul className="flex items-center justify-center mb-7">
               <li>
@@ -247,7 +247,7 @@ export default function Reviews() {
           </div>
           <div className="p-6">
             <div className="inline-block mb-5" >
-              <img alt="Man" src="https://img.freepik.com/fotos-gratis/homem-bonito-de-cabelos-grisalhos-em-pe-com-as-maos-postas-sorrindo-e-olhando-para-longe_74855-8067.jpg?w=900&t=st=1693701441~exp=1693702041~hmac=51c762e6d308d8895fd3201720321d15391dcaa106cb5c3cd185296e9762a2d1" className="h-12 w-10 rounded-full" />
+              <img alt="Man" src="https://img.freepik.com/fotos-gratis/homem-bonito-de-cabelos-grisalhos-em-pe-com-as-maos-postas-sorrindo-e-olhando-para-longe_74855-8067.jpg?w=900&t=st=1693701441~exp=1693702041~hmac=51c762e6d308d8895fd3201720321d15391dcaa106cb5c3cd185296e9762a2d1" className="h-12 w-10 rounded-full shadow-lg dark:shadow-black/30" />
             </div>
             <ul className="flex items-center justify-center mb-7">
               <li>
