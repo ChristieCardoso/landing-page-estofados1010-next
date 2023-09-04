@@ -49,7 +49,7 @@ export default function Services() {
             <img
               className="rounded-t-lg"
               src="https://img.freepik.com/fotos-gratis/fundo-de-gota-de-agua_23-2147787455.jpg?w=900&t=st=1693756889~exp=1693757489~hmac=2ef44c66ae7dcfa895144347f02f9d69207ba5f62458c84c7d3616ba8b37d8a2"
-              alt="Skyscrapers" />
+              alt="Foto de impermeabilização" />
 
             <div className="p-2">
               <h5 className="mt-6 text-2xl font-medium text-gray-900 truncate">
@@ -64,7 +64,7 @@ export default function Services() {
             <img
               className="rounded-t-lg"
               src="https://img.freepik.com/fotos-gratis/close-de-um-aspirador-de-po-em-uma-sala-de-estar_181624-51417.jpg?w=900&t=st=1693757658~exp=1693758258~hmac=73cc27307a401434f30fec2d26fadaa9e905983a3c7004aaa296583ae844872f"
-              alt="Los Angeles Skyscrapers" />
+              alt="Foto de tapete" />
 
             <div className="p-2">
               <h5 className="mt-6 text-2xl font-medium text-gray-900 truncate">

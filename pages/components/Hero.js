@@ -22,7 +22,7 @@ export default function Hero() {
           <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
-            viewBox="0 0 100 100"
+            viewBox="2 10 100 100"
             preserveAspectRatio="none"
             aria-hidden="true"
           >
@@ -119,13 +119,11 @@ export default function Hero() {
           </Popover>
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
+            <div className="sm:text-center lg:text-left ">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">
+                <span className="block xl:inline font-bold">
                   Estofados impecáveis, conforto elevado: sua escolha em{" "}
-                </span>{" "}
-                <span className="block text-blue-400 xl:inline">
-                  Limpeza
+                  <span className="text-blue-400">Limpeza</span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
@@ -147,10 +145,9 @@ export default function Hero() {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://img.freepik.com/fotos-gratis/pais-filha-usando-tablete-digital-ligado-sofa-em-sala-de-estar-casa_23-2148045495.jpg?w=740&t=st=1692812504~exp=1692813104~hmac=d2285d4ea1ca76b1260f3044896fa9ee6a20a9a16712d3e8e449bc57c85a5dcc"
-          alt=""
-        />
+          className="h-5/6"
+          src="https://img.freepik.com/fotos-gratis/um-zangado-homem-jovem-olhar-mulher-sorridente-videogame-jogando-cozinha_23-2148152792.jpg?w=900&t=st=1693788311~exp=1693788911~hmac=07aea54af8f379346ec01340b4bdb24868082e8089ab8d07db99cd38a8c20d8d"
+          alt="Imagem de uma mulher jogando video-game no sofa, com um homem atras do sofa" />
       </div>
     </div>
   );
