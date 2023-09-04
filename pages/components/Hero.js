@@ -144,7 +144,7 @@ export default function Hero() {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="h-5/6"
+          className="object-cover"
           src="https://img.freepik.com/fotos-gratis/um-zangado-homem-jovem-olhar-mulher-sorridente-videogame-jogando-cozinha_23-2148152792.jpg?w=900&t=st=1693788311~exp=1693788911~hmac=07aea54af8f379346ec01340b4bdb24868082e8089ab8d07db99cd38a8c20d8d"
           alt="Imagem de uma mulher jogando video-game no sofa, com um homem atras do sofa" />
       </div>

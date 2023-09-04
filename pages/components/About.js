@@ -37,9 +37,9 @@ export default function AboutUs() {
           </div>
           <div className="relative w-full px-4 mb-10 md:w-1/2 m-auto ">
             <img
-              className="h-5/6"
+              className="object-cover"
               src="https://img.freepik.com/fotos-gratis/familia-em-casa_23-2148166828.jpg?w=900&t=st=1693790792~exp=1693791392~hmac=3f7ee98f9d455bc031cf1285878fd1132d1b77769b1eab5dc70db0dbb6046d56"
-              alt="Imagem de uma mulher jogando video-game no sofa, com um homem atras do sofa" />
+              alt="Imagem de uma familia atras do sofa" />
           </div>
         </div>
       </div>
