@@ -12,6 +12,8 @@ const navigation = [
   { name: "Avaliações", href: "#reviews" },
   { name: "Contato", href: "#footer" },
 ];
+const whatsAppClick = () =>
+window.open("https://api.whatsapp.com/send?phone=31991839976", "_blank");
 
 export default function Hero() {
   return (
@@ -131,8 +133,8 @@ export default function Hero() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-800 md:py-4 md:text-lg md:px-10"
+                    onClick={whatsAppClick}
+                    className="w-full flex items-center cursor-pointer justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-800 md:py-4 md:text-lg md:px-10"
                   >
                     Fazer um Orçamento
                   </a>
